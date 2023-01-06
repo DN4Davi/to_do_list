@@ -1,0 +1,36 @@
+@use "variables" as *;
+@use "header";
+@use "task-form";
+@use "task-list.scss";
+@use "task";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500&family=Reenie+Beanie&display=swap";
+
+@font-face {
+  font-display: block;
+  font-family: bi;
+  src:
+    url("/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2")
+    format("woff2"),
+    url("/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff")
+    format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background;
+
+  .container {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 16px 20px;
+  }
+
+  .task-base {
+    display: none;
+  }
+}

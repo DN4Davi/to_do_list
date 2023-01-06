@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">To Do List</h1>
+        <p class="header__by">By DN4Davi</p>
+      </div>
+    </header>
+    <main class="container">
+      <form class="task-form">
+        <input type="text" class="task-form__input">
+        <button class="task-form__add"><i class="bi-plus-lg"></i></button>
+      </form>
+      <ul class="task-list"></ul>
+    </main>
+    <div class="task-base">
+      <li class="task">
+        <button class="task__delete"><i class="bi-x-lg"></i></button>
+        <div class="task__header">
+          <h2 class="task__title">Nothing</h2>
+        </div>
+        <form class="task__description-form">
+          <button class="task__description-edit"><i class="bi-pencil"></i></button>
+          <textarea class="task__description" placeholder="description" rows="2" spellcheck="false" disabled></textarea>
+        </form>
+        <section class="task__actions">
+          <button class="task__down"><i class="bi-arrow-down-short"></i></button>
+          <button class="task__up"><i class="bi-arrow-up-short"></i></button>
+          <button class="task__complete"><i class="bi-check"></i></button>
+        </section>
+      </li>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
